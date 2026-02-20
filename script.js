@@ -8,7 +8,7 @@ let count = 0;
 const maxCount = 50;
 
 // Handle form submission
-form.addEventListener("submit", function(event){
+form.addEventListener("submit", function (event) {
   event.preventDefault();
 
   // Get form values
@@ -37,7 +37,7 @@ form.addEventListener("submit", function(event){
   teamCounter.textContent = parseInt(teamCounter.textContent) + 1;
 
   // Show personalized greeting
-  const message = `Welcome, ${name} from ${teamName}!`;
+  const message = `🎉Welcome, ${name} from ${teamName}!`;
   const greeting = document.getElementById("greeting");
   greeting.textContent = message;
   greeting.classList.add("success-message");
